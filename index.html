@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Web Engage : Task</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <section class="login-section">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="login-page">
+                            <div class="row gx-md-5 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="hero-image">
+                                        <img src="assets/images/banner-bg.png" alt="banner bg" class="banner_bg" />
+                                        <img src="assets/images/banner-human.png" alt="banner" class="banner" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="user-info">
+                                        <div class="logo">
+                                            <img src="assets/images/logo.png" alt="logo" />
+                                        </div>
+                                        <h1>Get a Free</h1>
+                                        <h2>consultation with an expert.</h2>
+
+                                        <form id="form" action="thankyoupage.php" name="contactform" method="post">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="input-group"><input type="email" id="contact-email" name="email" placeholder="Enter Your Email" onkeyup="validateEmail()" /><span id="email-error"></span></div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-xxl-2 col-4">
+                                                            <div class="input-group">
+                                                                <select id="country" onchange="country_code()">
+                                                                    <option value="country" class="active">country</option>
+                                                                    <option value="Ind"> India</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-9 col-xxl-10 col-8 form-group">
+                                                            <div class="input-group">
+                                                                <input type="number" id="contact-Phone" name="number" placeholder="Enter Your Mobile" onkeyup="validatePhone()" /><span id="phone-error" maxlength="10"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="submit-btn">
+                                                <button type="submit" class="btn" id="submit-error" onclick="return validateForm()">
+                                                    Talk To Us
+                                                    <span class="material-symbols-outlined arrow">
+                                                        arrow_right_alt
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
